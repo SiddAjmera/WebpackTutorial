@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/main.js',
+    entry: './src/main.coffee',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -9,12 +9,9 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.coffee$/,
                 exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                loader: 'coffee-loader'
             }
         ]
     }
