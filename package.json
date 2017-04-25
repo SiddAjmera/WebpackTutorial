@@ -14,6 +14,7 @@
   "author": "Siddharth Ajmera",
   "license": "ISC",
   "devDependencies": {
+    "path": "^0.12.7",
     "webpack": "^2.4.1"
   },
   "dependencies": {
